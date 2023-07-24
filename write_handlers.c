@@ -4,11 +4,11 @@
 /**
  * handle_write_char - Prints a string.
  * @c: char types.
- * @buffer: Buffer array to handle print.
+ * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags.
  * @width: get width.
- * @precision: precision specifier.
- * @size: Size specifier.
+ * @precision: precision specifier
+ * @size: Size specifier
  *
  * Return: Number of chars printed.
  */
@@ -44,19 +44,6 @@ int handle_write_char(char c, char buffer[],
 	return (write(1, &buffer[0], 1));
 }
 
-/************************* WRITE NUMBER *************************/
-/**
- * write_number - Prints a string.
- * @is_negative: List of arguments.
- * @ind: char types.
- * @buffer: Buffer array to handle print.
- * @flags:  Calculates active flags.
- * @width: get width.
- * @precision: precision specifier.
- * @size: Size specifier.
- *
- * Return: Number of chars printed.
- */
 int write_number(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size)
 {
